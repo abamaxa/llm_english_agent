@@ -46,7 +46,8 @@ I included instructions in the prompts telling the model to think step by step a
 
 ● Summarization Technique: Discuss the approach you will take to implement the 'Summarize' function. How will you ensure that the essential points are retained while maintaining brevity, and how does this approach leverage the RAG model?
 
-I used a Huggingface transformer to implement the 'Summarize' function, using the t5-small model which I believe has been optimized to extract the essential points from the text.
+I used a Huggingface transformer to implement the 'Summarize' function, using the t5-small model which I believe has been optimized to extract the essential points from the text. If I had time, I would have provided options to control the
+level of summarization, either by selecting the number of sentences or by selecting a percentage of the original text
 
 ● Performance Metrics and Evaluation: What metrics would you use to evaluate the performance of each function in this application? How would you gather feedback or data to improve the system continuously, and what role does prompt engineering play in this process?
 
