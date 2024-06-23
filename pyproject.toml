@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "llm-english-agent"
+version = "0.1.0"
+description = "Demo LLM-based English Improvement Agent"
+authors = ["Chris Morgan <cmorgan@abamaxa.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "*", from="app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.35.3"
+transformers = "^4.41.2"
+sentence-transformers = "^3.0.1"
+faiss-cpu = "^1.8.0"
+numpy = "1.26.4"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.0"
+pytest = "^8.2.2"
+black = "^24.4.2"
+isort = "^5.13.2"
+datasets = "^2.20.0"
+flake8-pyproject = "^1.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 120
